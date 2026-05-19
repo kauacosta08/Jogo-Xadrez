@@ -2,7 +2,7 @@
 
 int main() {
     char opcao;
-    int t = 0, b = 0;
+    int t = 0, b = 0, movimentoCavalo = 1;
 
     printf("--JOGO DE XADREZ-- \n");
     printf(" \n");
@@ -98,6 +98,15 @@ int main() {
             break;
         }
     }while(b < 5);
+
+    printf("Movimentação Cavalo \n");
+
+    while(movimentoCavalo--){
+        for(int c = 0; c < 2; c++){
+            printf("Cavalo: Trás \n");
+        }
+        printf("Cavalo: Esquerda \n");
+    }
 
     return 0;
 }
